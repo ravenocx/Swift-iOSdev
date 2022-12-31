@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D4ABEEB295FE2200078F4BB /* UniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABEEA295FE2200078F4BB /* UniversityApp.swift */; };
+		9D4ABEED295FE2200078F4BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABEEC295FE2200078F4BB /* ContentView.swift */; };
+		9D4ABEEF295FE2210078F4BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4ABEEE295FE2210078F4BB /* Assets.xcassets */; };
+		9D4ABEF2295FE2210078F4BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4ABEF1295FE2210078F4BB /* Preview Assets.xcassets */; };
+		9D4ABEFC295FE2210078F4BB /* UniversityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABEFB295FE2210078F4BB /* UniversityTests.swift */; };
+		9D4ABF06295FE2210078F4BB /* UniversityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF05295FE2210078F4BB /* UniversityUITests.swift */; };
+		9D4ABF08295FE2210078F4BB /* UniversityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF07295FE2210078F4BB /* UniversityUITestsLaunchTests.swift */; };
+		9D4ABF1B295FE4740078F4BB /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4ABF1A295FE4740078F4BB /* CombineMoya */; };
+		9D4ABF1D295FE4740078F4BB /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4ABF1C295FE4740078F4BB /* Moya */; };
+		9D4ABF1F295FE4740078F4BB /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4ABF1E295FE4740078F4BB /* ReactiveMoya */; };
+		9D4ABF21295FE4740078F4BB /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4ABF20295FE4740078F4BB /* RxMoya */; };
+		9D4ABF25295FE4FE0078F4BB /* Encodable+toJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF24295FE4FE0078F4BB /* Encodable+toJSON.swift */; };
+		9D4ABF2F295FE7FE0078F4BB /* MoyaProvider+requestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF2E295FE7FE0078F4BB /* MoyaProvider+requestAsync.swift */; };
+		9D4ABF31295FED420078F4BB /* MoyaProvider+defaultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF30295FED420078F4BB /* MoyaProvider+defaultProvider.swift */; };
+		9D4ABF33295FEDA90078F4BB /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF32295FEDA90078F4BB /* University.swift */; };
+		9D4ABF38295FF0EB0078F4BB /* MyUniversityTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF37295FF0EB0078F4BB /* MyUniversityTargetType.swift */; };
+		9D4ABF3A295FF3CD0078F4BB /* UniversityTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4ABF39295FF3CD0078F4BB /* UniversityTargetType.swift */; };
+		9DE7F374295FFB170081FC41 /* UniversityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7F373295FFB170081FC41 /* UniversityDataSource.swift */; };
+		9DE7F376295FFBDF0081FC41 /* UniversityDefaultDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7F375295FFBDF0081FC41 /* UniversityDefaultDataSource.swift */; };
+		9DE7F37A295FFE980081FC41 /* UniversitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7F379295FFE980081FC41 /* UniversitiesViewModel.swift */; };
+		9DE7F37C2960054F0081FC41 /* UniversitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7F37B2960054F0081FC41 /* UniversitiesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D4ABEF8295FE2210078F4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4ABEDF295FE2200078F4BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D4ABEE6295FE2200078F4BB;
+			remoteInfo = University;
+		};
+		9D4ABF02295FE2210078F4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4ABEDF295FE2200078F4BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D4ABEE6295FE2200078F4BB;
+			remoteInfo = University;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D4ABEE7295FE2200078F4BB /* University.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = University.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4ABEEA295FE2200078F4BB /* UniversityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityApp.swift; sourceTree = "<group>"; };
+		9D4ABEEC295FE2200078F4BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D4ABEEE295FE2210078F4BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D4ABEF1295FE2210078F4BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D4ABEF7295FE2210078F4BB /* UniversityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4ABEFB295FE2210078F4BB /* UniversityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityTests.swift; sourceTree = "<group>"; };
+		9D4ABF01295FE2210078F4BB /* UniversityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4ABF05295FE2210078F4BB /* UniversityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityUITests.swift; sourceTree = "<group>"; };
+		9D4ABF07295FE2210078F4BB /* UniversityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D4ABF24295FE4FE0078F4BB /* Encodable+toJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+toJSON.swift"; sourceTree = "<group>"; };
+		9D4ABF2E295FE7FE0078F4BB /* MoyaProvider+requestAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+requestAsync.swift"; sourceTree = "<group>"; };
+		9D4ABF30295FED420078F4BB /* MoyaProvider+defaultProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+defaultProvider.swift"; sourceTree = "<group>"; };
+		9D4ABF32295FEDA90078F4BB /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		9D4ABF37295FF0EB0078F4BB /* MyUniversityTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniversityTargetType.swift; sourceTree = "<group>"; };
+		9D4ABF39295FF3CD0078F4BB /* UniversityTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityTargetType.swift; sourceTree = "<group>"; };
+		9DE7F373295FFB170081FC41 /* UniversityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDataSource.swift; sourceTree = "<group>"; };
+		9DE7F375295FFBDF0081FC41 /* UniversityDefaultDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDefaultDataSource.swift; sourceTree = "<group>"; };
+		9DE7F379295FFE980081FC41 /* UniversitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesViewModel.swift; sourceTree = "<group>"; };
+		9DE7F37B2960054F0081FC41 /* UniversitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesView.swift; sourceTree = "<group>"; };
+		9DE7F37D296009D70081FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D4ABEE4295FE2200078F4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4ABF1D295FE4740078F4BB /* Moya in Frameworks */,
+				9D4ABF1B295FE4740078F4BB /* CombineMoya in Frameworks */,
+				9D4ABF21295FE4740078F4BB /* RxMoya in Frameworks */,
+				9D4ABF1F295FE4740078F4BB /* ReactiveMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ABEF4295FE2210078F4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ABEFE295FE2210078F4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D4ABEDE295FE2200078F4BB = {
+			isa = PBXGroup;
+			children = (
+				9D4ABEE9295FE2200078F4BB /* University */,
+				9D4ABEFA295FE2210078F4BB /* UniversityTests */,
+				9D4ABF04295FE2210078F4BB /* UniversityUITests */,
+				9D4ABEE8295FE2200078F4BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D4ABEE8295FE2200078F4BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABEE7295FE2200078F4BB /* University.app */,
+				9D4ABEF7295FE2210078F4BB /* UniversityTests.xctest */,
+				9D4ABF01295FE2210078F4BB /* UniversityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D4ABEE9295FE2200078F4BB /* University */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7F37D296009D70081FC41 /* Info.plist */,
+				9D4ABF14295FE29A0078F4BB /* Feature */,
+				9D4ABF16295FE2B10078F4BB /* Common */,
+				9D4ABEEE295FE2210078F4BB /* Assets.xcassets */,
+				9D4ABEF0295FE2210078F4BB /* Preview Content */,
+			);
+			path = University;
+			sourceTree = "<group>";
+		};
+		9D4ABEF0295FE2210078F4BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABEF1295FE2210078F4BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D4ABEFA295FE2210078F4BB /* UniversityTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABEFB295FE2210078F4BB /* UniversityTests.swift */,
+			);
+			path = UniversityTests;
+			sourceTree = "<group>";
+		};
+		9D4ABF04295FE2210078F4BB /* UniversityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF05295FE2210078F4BB /* UniversityUITests.swift */,
+				9D4ABF07295FE2210078F4BB /* UniversityUITestsLaunchTests.swift */,
+			);
+			path = UniversityUITests;
+			sourceTree = "<group>";
+		};
+		9D4ABF14295FE29A0078F4BB /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF17295FE3BE0078F4BB /* Universities */,
+				9D4ABEEC295FE2200078F4BB /* ContentView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		9D4ABF15295FE2AA0078F4BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABEEA295FE2200078F4BB /* UniversityApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9D4ABF16295FE2B10078F4BB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF2B295FE72F0078F4BB /* Resources */,
+				9D4ABF15295FE2AA0078F4BB /* Base */,
+				9D4ABF2C295FE7590078F4BB /* Models */,
+				9D4ABF2D295FE7620078F4BB /* Data */,
+				9D4ABF23295FE4C70078F4BB /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D4ABF17295FE3BE0078F4BB /* Universities */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF27295FE6D60078F4BB /* ViewModel */,
+				9D4ABF2A295FE6F90078F4BB /* View */,
+			);
+			path = Universities;
+			sourceTree = "<group>";
+		};
+		9D4ABF23295FE4C70078F4BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF24295FE4FE0078F4BB /* Encodable+toJSON.swift */,
+				9D4ABF30295FED420078F4BB /* MoyaProvider+defaultProvider.swift */,
+				9D4ABF2E295FE7FE0078F4BB /* MoyaProvider+requestAsync.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9D4ABF27295FE6D60078F4BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7F379295FFE980081FC41 /* UniversitiesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D4ABF2A295FE6F90078F4BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7F37B2960054F0081FC41 /* UniversitiesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D4ABF2B295FE72F0078F4BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D4ABF2C295FE7590078F4BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF32295FEDA90078F4BB /* University.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D4ABF2D295FE7620078F4BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF35295FF0BF0078F4BB /* Reusable */,
+				9D4ABF34295FF0B20078F4BB /* University */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9D4ABF34295FF0B20078F4BB /* University */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF39295FF3CD0078F4BB /* UniversityTargetType.swift */,
+				9DE7F375295FFBDF0081FC41 /* UniversityDefaultDataSource.swift */,
+				9DE7F373295FFB170081FC41 /* UniversityDataSource.swift */,
+			);
+			path = University;
+			sourceTree = "<group>";
+		};
+		9D4ABF35295FF0BF0078F4BB /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF36295FF0D20078F4BB /* TargetType */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		9D4ABF36295FF0D20078F4BB /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				9D4ABF37295FF0EB0078F4BB /* MyUniversityTargetType.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D4ABEE6295FE2200078F4BB /* University */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4ABF0B295FE2210078F4BB /* Build configuration list for PBXNativeTarget "University" */;
+			buildPhases = (
+				9D4ABEE3295FE2200078F4BB /* Sources */,
+				9D4ABEE4295FE2200078F4BB /* Frameworks */,
+				9D4ABEE5295FE2200078F4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = University;
+			packageProductDependencies = (
+				9D4ABF1A295FE4740078F4BB /* CombineMoya */,
+				9D4ABF1C295FE4740078F4BB /* Moya */,
+				9D4ABF1E295FE4740078F4BB /* ReactiveMoya */,
+				9D4ABF20295FE4740078F4BB /* RxMoya */,
+			);
+			productName = University;
+			productReference = 9D4ABEE7295FE2200078F4BB /* University.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D4ABEF6295FE2210078F4BB /* UniversityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4ABF0E295FE2210078F4BB /* Build configuration list for PBXNativeTarget "UniversityTests" */;
+			buildPhases = (
+				9D4ABEF3295FE2210078F4BB /* Sources */,
+				9D4ABEF4295FE2210078F4BB /* Frameworks */,
+				9D4ABEF5295FE2210078F4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D4ABEF9295FE2210078F4BB /* PBXTargetDependency */,
+			);
+			name = UniversityTests;
+			productName = UniversityTests;
+			productReference = 9D4ABEF7295FE2210078F4BB /* UniversityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D4ABF00295FE2210078F4BB /* UniversityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4ABF11295FE2210078F4BB /* Build configuration list for PBXNativeTarget "UniversityUITests" */;
+			buildPhases = (
+				9D4ABEFD295FE2210078F4BB /* Sources */,
+				9D4ABEFE295FE2210078F4BB /* Frameworks */,
+				9D4ABEFF295FE2210078F4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D4ABF03295FE2210078F4BB /* PBXTargetDependency */,
+			);
+			name = UniversityUITests;
+			productName = UniversityUITests;
+			productReference = 9D4ABF01295FE2210078F4BB /* UniversityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D4ABEDF295FE2200078F4BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9D4ABEE6295FE2200078F4BB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9D4ABEF6295FE2210078F4BB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9D4ABEE6295FE2200078F4BB;
+					};
+					9D4ABF00295FE2210078F4BB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9D4ABEE6295FE2200078F4BB;
+					};
+				};
+			};
+			buildConfigurationList = 9D4ABEE2295FE2200078F4BB /* Build configuration list for PBXProject "University" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D4ABEDE295FE2200078F4BB;
+			packageReferences = (
+				9D4ABF19295FE4740078F4BB /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 9D4ABEE8295FE2200078F4BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D4ABEE6295FE2200078F4BB /* University */,
+				9D4ABEF6295FE2210078F4BB /* UniversityTests */,
+				9D4ABF00295FE2210078F4BB /* UniversityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D4ABEE5295FE2200078F4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4ABEF2295FE2210078F4BB /* Preview Assets.xcassets in Resources */,
+				9D4ABEEF295FE2210078F4BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ABEF5295FE2210078F4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ABEFF295FE2210078F4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D4ABEE3295FE2200078F4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE7F374295FFB170081FC41 /* UniversityDataSource.swift in Sources */,
+				9D4ABF3A295FF3CD0078F4BB /* UniversityTargetType.swift in Sources */,
+				9DE7F37A295FFE980081FC41 /* UniversitiesViewModel.swift in Sources */,
+				9D4ABF31295FED420078F4BB /* MoyaProvider+defaultProvider.swift in Sources */,
+				9D4ABF38295FF0EB0078F4BB /* MyUniversityTargetType.swift in Sources */,
+				9D4ABEED295FE2200078F4BB /* ContentView.swift in Sources */,
+				9D4ABF2F295FE7FE0078F4BB /* MoyaProvider+requestAsync.swift in Sources */,
+				9DE7F376295FFBDF0081FC41 /* UniversityDefaultDataSource.swift in Sources */,
+				9D4ABF25295FE4FE0078F4BB /* Encodable+toJSON.swift in Sources */,
+				9D4ABEEB295FE2200078F4BB /* UniversityApp.swift in Sources */,
+				9DE7F37C2960054F0081FC41 /* UniversitiesView.swift in Sources */,
+				9D4ABF33295FEDA90078F4BB /* University.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ABEF3295FE2210078F4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4ABEFC295FE2210078F4BB /* UniversityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ABEFD295FE2210078F4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4ABF08295FE2210078F4BB /* UniversityUITestsLaunchTests.swift in Sources */,
+				9D4ABF06295FE2210078F4BB /* UniversityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D4ABEF9295FE2210078F4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D4ABEE6295FE2200078F4BB /* University */;
+			targetProxy = 9D4ABEF8295FE2210078F4BB /* PBXContainerItemProxy */;
+		};
+		9D4ABF03295FE2210078F4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D4ABEE6295FE2200078F4BB /* University */;
+			targetProxy = 9D4ABF02295FE2210078F4BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D4ABF09295FE2210078F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D4ABF0A295FE2210078F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D4ABF0C295FE2210078F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"University/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = University/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Motion.University;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D4ABF0D295FE2210078F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"University/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = University/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Motion.University;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D4ABF0F295FE2210078F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Motion.UniversityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/University.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/University";
+			};
+			name = Debug;
+		};
+		9D4ABF10295FE2210078F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Motion.UniversityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/University.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/University";
+			};
+			name = Release;
+		};
+		9D4ABF12295FE2210078F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Motion.UniversityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = University;
+			};
+			name = Debug;
+		};
+		9D4ABF13295FE2210078F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Motion.UniversityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = University;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D4ABEE2295FE2200078F4BB /* Build configuration list for PBXProject "University" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4ABF09295FE2210078F4BB /* Debug */,
+				9D4ABF0A295FE2210078F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4ABF0B295FE2210078F4BB /* Build configuration list for PBXNativeTarget "University" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4ABF0C295FE2210078F4BB /* Debug */,
+				9D4ABF0D295FE2210078F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4ABF0E295FE2210078F4BB /* Build configuration list for PBXNativeTarget "UniversityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4ABF0F295FE2210078F4BB /* Debug */,
+				9D4ABF10295FE2210078F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4ABF11295FE2210078F4BB /* Build configuration list for PBXNativeTarget "UniversityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4ABF12295FE2210078F4BB /* Debug */,
+				9D4ABF13295FE2210078F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D4ABF19295FE4740078F4BB /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D4ABF1A295FE4740078F4BB /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D4ABF19295FE4740078F4BB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		9D4ABF1C295FE4740078F4BB /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D4ABF19295FE4740078F4BB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		9D4ABF1E295FE4740078F4BB /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D4ABF19295FE4740078F4BB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		9D4ABF20295FE4740078F4BB /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D4ABF19295FE4740078F4BB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9D4ABEDF295FE2200078F4BB /* Project object */;
+}
